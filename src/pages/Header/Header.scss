@@ -1,0 +1,111 @@
+.Header {
+  // background-color: #000000;
+  // background-color: gray;
+  width: 100%;
+  height: 48px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+
+  .logo {
+    width: 100px;
+    height: 100%;
+    // font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    .music-icon {
+        font-size: 28px;
+    }
+  }
+
+  .logo:hover {
+    transform: scale(1.1);
+  }
+
+  .header-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    .home_icon {
+      font-size: 24px;
+      padding: 12px;
+      border-radius: 50%;
+      cursor: pointer;
+      border: none;
+      color: #fff;
+      background-color: #1f1f1f;
+    }
+
+    .home_icon:hover {
+        transform: scale(1.1);
+    }
+
+    .header-form {
+      background-color: gray;
+      border-radius: 500px;
+      border: none;
+      position: relative;
+
+      .header-input {
+        font-size: 16px;
+        padding: 12px 48px;
+        border-radius: 500px;
+        border: none;
+        background-color: #1f1f1f;
+        color: #fff;
+      }
+
+      .header-input:focus {
+        border: none;
+        outline: none;
+        -webkit-box-shadow: inset 0 0 0 2px #fff;
+        box-shadow: inset 0 0 0 2px #fff;
+        cursor: pointer;
+      }
+
+      .faMagnifyingGlass {
+        padding: 0px 12px;
+        font-size: 24px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #ccc;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .header-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .header-sign {
+        background-color: #000000;
+        color: #b3b3b3;
+    }
+
+    .header-sign,
+    .header-log {
+        font-size: 16px;
+        font-weight: 700;
+        border: none;
+        border-radius: 500px;
+        padding: 16px 32px; 
+        margin-right: 15px;
+        cursor: pointer;
+    }
+
+    .header-sign:hover,
+    .header-log:hover {
+        transform: scale(1.1);
+    }
+  }
+}

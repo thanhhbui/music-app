@@ -1,5 +1,16 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
+  background-color: #000000;
+  width: auto;
+  min-height: 100vh;
+
+  overflow-y: auto;
 }
 
 .App-logo {
@@ -22,6 +33,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  overflow-y: auto;
 }
 
 .App-link {

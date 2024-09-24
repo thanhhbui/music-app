@@ -1,0 +1,177 @@
+.signup {
+  width: 100%;
+  min-height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #121212;
+  overflow: hidden;
+  padding: 0px;
+
+  .header {
+    flex: 0 0 auto;
+    width: 100%;
+    padding: 32px 0px 24px;
+
+    .music-icon {
+      color: #fff;
+      font-size: 40px;
+    }
+  }
+
+  .center {
+    flex: 1 0 auto;
+    width: 324px;
+    padding: 0x 32px;
+
+    .center-header {
+      .center-title {
+        width: 100%;
+        margin: 0px 0px 40px 0px;
+        font-size: 48px;
+        font-weight: 700;
+        text-wrap: balance;
+        text-align: center;
+      }
+    }
+
+    .center-form {
+      width: 300px;
+      text-align: left;
+
+      .form-sign-up {
+        margin-bottom: 8px;
+
+        .form-input {
+          padding-top: 8px;
+        }
+
+        label {
+          font-weight: 700;
+          font-size: 14px;
+          cursor: pointer;
+        }
+
+        .input {
+          width: 100%;
+          font-size: 16px;
+          padding: 14px 12px;
+          border-radius: 4px;
+          border: 1px solid #7c7c7c; 
+          background-color: #121212;
+          color: #fff;
+        }
+
+        .input:hover {
+          border: 1px solid #ffffff;
+        }
+
+        .input:focus {
+          outline: none;
+          border: 1px solid #ffffff;
+          box-shadow: inset 0 0 0 3px var(#fff, #000000);
+        }
+      }
+
+      button {
+        width: 324px;
+        font-size: 16px;
+        padding: 16px 32px;
+        font-weight: 700;
+        border: none;
+        border-radius: 500px;
+        background-color: #1ed760;
+        cursor: pointer;
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+
+    .center-log {
+      .or-divider {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 20px 0;
+
+        .or-text {
+          font-size: 12px;
+          color: #999;
+        }
+      }
+
+      .or-divider::before,
+      .or-divider::after {
+        content: "";
+        flex: 1;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .or-divider::before {
+        margin-right: 10px;
+      }
+
+      .or-divider::after {
+        margin-left: 10px;
+      }
+
+      .signup-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        font-weight: 700;
+
+        button {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: black;
+          color: inherit;
+          border: 1px solid #fff;
+          border-radius: 50px;
+          padding: 12px 20px;
+          font-size: 16px;
+          width: 100%;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+          font-weight: 700;
+        }
+
+        .icon {
+          position: absolute;
+          left: 20px;
+          margin-right: 10px;
+          font-size: 20px;
+        }
+
+        button:hover {
+          background-color: #333;
+        }
+      }
+
+      .register {
+        color: #b3b3b3;
+        margin-top: 22px;
+
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .footer {
+    flex: 0 0 auto;
+    color: #b3b3b3;
+    font-size: 0.75rem;
+    font-weight: 400;
+    
+
+    p a {
+      color: #b3b3b3;
+    }
+  }
+}
