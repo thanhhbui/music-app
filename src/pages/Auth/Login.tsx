@@ -9,12 +9,15 @@ import { Link } from "react-router-dom";
 const Login: React.FC = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const dispatch = useDispatch();
+  const [isLogin, setIsLogin] = useState(false);
 
-  const handleLogin = () => {
-    // dispatch(Login(email, password));
-    console.log("email: " + email);
-    console.log("password: " + password);
+  const handleLogin = (e: React.FormEvent) => {
+    e.preventDefault();
+    // if(isLogin) {
+    //   dispatch(loginThunk(email, password));
+    // } else {
+    //   // dispatch(signUp(email, password));
+    // }
   }
 
   return (
@@ -43,7 +46,7 @@ const Login: React.FC = () => {
           </div>
           <hr role="presentation" className="dash"></hr>
           <div className="center-form">
-            <form action="" className="form">
+            <form onSubmit={handleLogin} className="form">
               <div className="form-log-in">
                 <div>
                   <label htmlFor="">Email address</label>
@@ -73,7 +76,7 @@ const Login: React.FC = () => {
                 </div>
               </div>
               <div className="login-button">
-                <button onClick={handleLogin}>Log in</button>
+                <button onClick={() => setIsLogin(!isLogin)}>Log in</button>
               </div>
               <div className="forgot-password">
                 <Link to="/">Forgot your password?</Link>

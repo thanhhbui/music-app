@@ -37,7 +37,7 @@
     }
 
     .center-form {
-      width: 300px;
+      width: 324px;
       text-align: left;
 
       .form-sign-up {
@@ -58,7 +58,7 @@
           font-size: 16px;
           padding: 14px 12px;
           border-radius: 4px;
-          border: 1px solid #7c7c7c; 
+          border: 1px solid #7c7c7c;
           background-color: #121212;
           color: #fff;
         }
@@ -85,6 +85,11 @@
         cursor: pointer;
         text-align: center;
         margin-top: 10px;
+      }
+
+      button:hover {
+        transform: scale(1.04);
+        background-color: var(--background-highlight, #3be477);
       }
     }
 
@@ -168,7 +173,6 @@
     color: #b3b3b3;
     font-size: 0.75rem;
     font-weight: 400;
-    
 
     p a {
       color: #b3b3b3;

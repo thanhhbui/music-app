@@ -8,14 +8,10 @@ import {
   faApple,
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "../../redux/store";
 
 const Signup: React.FC = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const dispatch = useDispatch();
-  const error = useSelector((state: RootState) => state.user.error);
 
   const handleSignup = () => {
     
